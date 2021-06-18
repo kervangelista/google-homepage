@@ -6,44 +6,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Google</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    li, a, button {
+      font-size: 14px;
+    }
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 15px 30px;
+    }
+    .nav-link {
+      list-style: none;
+    }
+    .nav-link li{
+      display: inline-block;
+      padding: 0px 10px;
+    }
+    header img {
+      padding: 0px 10px;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 10px;
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      margin-top: 350px;
+      background-color: #dadce0;
+      color: rgba(0,0,0,.54)
+    }
+    .nav-link-left, .nav-link-right {
+      list-style: none;
+    }
+    .nav-link-left li {
+      display: inline-block;
+      padding: 0px 10px;
+    }
+    .nav-link-right li {
+      display: inline-block;
+      padding: 0px 10px;
+    }
   </style>
 </head>
 <body>
-  <nav class="nav">
-    <ul class="nav-list">
-      <li>
-        <a href="#Gmail">Gmail</a>
-      </li>
-      <li>
-        <a href="#Images">Images</a>
-      </li>
-      <li>
-        <img src="H:\Kervin\Photoshop tools\PROGRAMMING\the_odin_project\google-homepage\icon-apps.png" alt="apps icon">
-      </li>
-      <li>
-        <img src="H:\Kervin\Photoshop tools\PROGRAMMING\the_odin_project\google-homepage\icon-acc.png" alt="account icon">
-      </li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <ul class="nav-link">
+        <li><a href="">Gmail</a></li>
+        <li><a href="">Images</a></li>
+      </ul>
+    </nav>
+    <a href="#"><img src="images/icons-app.png" alt="apps icon"></a>
+    <a href=""><img src="images/icons-acc.png" alt="acc icon"></a>
+  </header>
   <main class="main">
     <img class="project-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
-    <form>
-      <input class="search-box" type="search" name="search" required="">
-    </form>
+    <div class="search-bar">
+      <form>
+        <input type="search" name="" id="search-box">
+      </form>
+    </div>
     <div class="btn">
       <button class="btn">Google Search</button>
       <button class="btn">I'm Feeling Lucky</button>
     </div>
   </main>
   <footer>
-    <nav class="nav-footer">
-      <ul class="nav-list-footer-left">
+    <nav>
+      <ul class="nav-link-left">
         <li><a href="#About">About</a></li>
         <li><a href="#Advertising">Advertising</a></li>
         <li><a href="#Business">Business</a></li>
         <li><a href="#How_search_works">How Search works</a></li>
       </ul>
-      <ul class="nav-list-footer-right">
+    </nav>
+    <nav>
+      <ul class="nav-link-right">
         <li><a href="#Privacy">Privacy</a></li>
         <li><a href="#Terms">Terms</a></li>
         <li><a href="#Settings">Settings</a></li>
